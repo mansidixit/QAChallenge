@@ -14,27 +14,27 @@ describe('Sort Items', () => {
 
     })
 
-    // it('Sort Item from Low to High price', () => {
+    it('Sort Item from Low to High price', () => {
 
-    //     cy.get("div.elementor-menu-toggle > i.eicon-menu-bar").click();
-    //     cy.get("ul[id*='menu-2-'] > li:nth-child(1) ").click();
-    //     cy.get("ul[id*='menu-2-'] > li:nth-child(1) >ul > li:nth-child(4)").click();
+        cy.get("div.elementor-menu-toggle > i.eicon-menu-bar").click();
+        cy.get("ul[id*='menu-2-'] > li:nth-child(1) ").click();
+        cy.get("ul[id*='menu-2-'] > li:nth-child(1) >ul > li:nth-child(4)").click();
 
-    //     //clicks Find your Spirit menu
-    //     cy.get("div.prdctfltr_wc.prdctfltr_woocommerce.woocommerce.prdctfltr_wc_regular.pf_sidebar_css > span > span.prdctfltr_woocommerce_filter_title").click();
-    //     //clicks Price Low to Hign
-    //     cy.get("div.xwc--pf-show-sidebar label.prdctfltr_ft_price > span").click();
-    //     //Clicks Go
-    //     cy.get("div.xwc--pf-show-sidebar div.prdctfltr_buttons a").click();
-    //     cy.get('div.ccliquor-shop-float-left > span > bdi', { timeout: 10000 }).should('be.visible');
+        //clicks Find your Spirit menu
+        cy.get("div.prdctfltr_wc.prdctfltr_woocommerce.woocommerce.prdctfltr_wc_regular.pf_sidebar_css > span > span.prdctfltr_woocommerce_filter_title").click();
+        //clicks Price Low to Hign
+        cy.get("div.xwc--pf-show-sidebar label.prdctfltr_ft_price > span").click();
+        //Clicks Go
+        cy.get("div.xwc--pf-show-sidebar div.prdctfltr_buttons a").click();
+        cy.get('div.ccliquor-shop-float-left > span > bdi', { timeout: 10000 }).should('be.visible');
 
-    //     //checks whether the Single price is sorted correctly or not :lowToHigh
-    //     cy.sortByPrice('div.ccliquor-shop-float-left > span > bdi', 'lowToHigh');
+        //checks whether the Single price is sorted correctly or not :lowToHigh
+        cy.sortByPrice('div.ccliquor-shop-float-left > span > bdi', 'lowToHigh');
 
-    //     // checks the Member Price is correctly sorted or not : lowToHigh
-    //     cy.sortByPrice('div.ccliquor-member-shop-float-left > span > bdi', 'lowToHigh');
+        // checks the Member Price is correctly sorted or not : lowToHigh
+        cy.sortByPrice('div.ccliquor-member-shop-float-left > span > bdi', 'lowToHigh');
 
-    // })
+    })
 
     it('Sort Item from High to Low price', () => {
 
